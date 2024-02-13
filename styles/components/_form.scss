@@ -1,0 +1,16 @@
+input[type='email'],
+button[type='submit'] {
+  padding: 10px;
+  border: 1px solid $color-secondary;
+  margin-bottom: 15px;
+}
+
+button[type='submit'] {
+  background-color: $color-primary;
+  color: $color-background;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
