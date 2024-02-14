@@ -263,4 +263,27 @@ button[type=submit]:hover {
   text-align: center;
   font-size: 14px;
   width: 1000px;
+}
+
+.team_photos .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.team_photos .container .member_photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team_photos .container .member_photo .member_photo1 {
+  -o-object-position: left;
+     object-position: left;
+}
+.team_photos .container .member_photo img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
 }/*# sourceMappingURL=styles.css.map */
