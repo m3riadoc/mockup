@@ -9,19 +9,29 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        ;
-
-        .member_photo1{
-            object-position: left;
-        }
-
+        
+        
         img {
           width: 100%; 
-          height: auto; 
           object-fit: cover; 
-          aspect-ratio: 1 / 1; 
-          
-            
+          aspect-ratio: 1 / 1;
+        }
+        .member_photo_left {
+            height: 450px;
+            object-position: 20% 40%; 
+            object-fit: none;
+        }
+
+        .member_photo_center {
+            height: 450px;
+            object-position: 55% 90%; 
+            object-fit: none;
+        }
+
+        .member_photo_right{
+            height: 450px;
+            object-position: 50% 10%; 
+            object-fit: none;
         }
     }
   }

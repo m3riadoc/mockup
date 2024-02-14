@@ -276,14 +276,30 @@ button[type=submit]:hover {
   align-items: center;
   text-align: center;
 }
-.team_photos .container .member_photo .member_photo1 {
-  -o-object-position: left;
-     object-position: left;
-}
 .team_photos .container .member_photo img {
   width: 100%;
-  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 1/1;
+}
+.team_photos .container .member_photo .member_photo_left {
+  height: 450px;
+  -o-object-position: 20% 40%;
+     object-position: 20% 40%;
+  -o-object-fit: none;
+     object-fit: none;
+}
+.team_photos .container .member_photo .member_photo_center {
+  height: 450px;
+  -o-object-position: 55% 90%;
+     object-position: 55% 90%;
+  -o-object-fit: none;
+     object-fit: none;
+}
+.team_photos .container .member_photo .member_photo_right {
+  height: 450px;
+  -o-object-position: 50% 10%;
+     object-position: 50% 10%;
+  -o-object-fit: none;
+     object-fit: none;
 }/*# sourceMappingURL=styles.css.map */
