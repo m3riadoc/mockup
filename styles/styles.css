@@ -139,14 +139,14 @@ button[type=submit]:hover {
   text-align: center;
   padding: 50px 0;
 }
-.header__content h1 {
+.header__content__title {
   font-weight: normal;
   font-family: "Kaushan Script", cursive;
   font-size: 60px;
   color: #ffffff;
   margin-bottom: 30px;
 }
-.header__content p {
+.header__content__subtitle {
   font-family: "Montserrat";
   font-size: 120px;
   font-weight: bold;
@@ -154,7 +154,7 @@ button[type=submit]:hover {
   color: #ffffff;
   margin-bottom: 40px;
 }
-.header__content .btn {
+.header__content__button {
   background-color: transparent;
   border: 2px solid white;
   color: #ffffff;
@@ -165,7 +165,7 @@ button[type=submit]:hover {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.header__content .btn:hover {
+.header__content__button:hover {
   background-color: rgba(243, 129, 129, 0.9);
 }
 
