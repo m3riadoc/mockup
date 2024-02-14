@@ -10,7 +10,7 @@
       grid-template-rows: repeat(2, auto); 
     }
 
-    h2{
+    &__title{
       display: flex;
       justify-content: center;
       font-family: $font-secondary, cursive;
@@ -19,7 +19,7 @@
       color: $color-black;
     }
     
-    p{
+    &__subtitle{
       display: flex;
       justify-content: center;
       font-family: $font-primary;

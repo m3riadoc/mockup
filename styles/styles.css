@@ -179,7 +179,7 @@ button[type=submit]:hover {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
 }
-.services h2 {
+.services__title {
   display: flex;
   justify-content: center;
   font-family: "Kaushan Script", cursive;
@@ -187,7 +187,7 @@ button[type=submit]:hover {
   font-size: 20px;
   color: #000000;
 }
-.services p {
+.services__subtitle {
   display: flex;
   justify-content: center;
   font-family: "Montserrat";
@@ -231,12 +231,12 @@ button[type=submit]:hover {
   padding: 0 15px;
 }
 
-.our_team {
+.our-team {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.our_team h2 {
+.our-team__title {
   display: flex;
   justify-content: center;
   font-family: "Kaushan Script", cursive;
@@ -244,7 +244,7 @@ button[type=submit]:hover {
   font-size: 20px;
   color: #000000;
 }
-.our_team h3 {
+.our-team__subtitle {
   display: flex;
   justify-content: center;
   font-family: "Montserrat";
@@ -253,7 +253,7 @@ button[type=submit]:hover {
   color: #000000;
   margin-bottom: 20px;
 }
-.our_team p {
+.our-team__description {
   font-weight: 200;
   color: #000000;
   padding-top: 30px;
