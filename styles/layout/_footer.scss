@@ -4,20 +4,41 @@
     margin-right: auto;
     color: $color-black;
     margin-bottom: 60px;
-   .container{
-    display: flex;
-    justify-content:space-between;
-    align-items: baseline;
-   }
-   &__text{
-    font-family: $font-primary;
-    font-size: 13px;
-    font-weight: 600;
-   }
-   &__author{
-    color: $color-primary;
-   }
-   &__right{
-    display: flex;
-   }
-}
+  
+    .container {
+      display: flex;
+      justify-content: space-between; // Wyśrodkowanie poziome dla elementów w kontenerze
+      align-items: baseline;
+    }
+  
+    @media (min-width: $breakpoint-phone-min) and (max-width: $breakpoint-phone-max) {
+      .container {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center; // Wyśrodkowanie elementów kontenera w osi pionowej dla wersji mobilnej
+        text-align: center; // Dodatkowo wyśrodkuje tekst w elementach potomnych
+      }
+      .footer__right {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        width: 100%; // Możesz ustawić na 100%, aby wykorzystać dostępną szerokość, lub dostosować szerokość do potrzeb
+        justify-content: center; // Wyśrodkowanie poziome dla elementów wewnątrz .footer__right
+      }
+    }
+  
+    &__text {
+      font-family: $font-primary;
+      font-size: 13px;
+      font-weight: 600;
+    }
+  
+    &__author {
+      color: $color-primary;
+    }
+  
+    &__right {
+      display: flex;
+    }
+  }
+  

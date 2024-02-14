@@ -5,12 +5,12 @@
   background-position: center;
   background-size: cover;
   padding-top: 20px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   max-width: 90%;
   width: 100%;
-  height: 60vh;
+  min-height: 70vh;
   
   
   @media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
@@ -28,6 +28,26 @@
       font-size: 12px;
     }
   }
+  @media (min-width: $breakpoint-phone-min) and (max-width: $breakpoint-phone-max) {
+    .header{
+      
+    }
+
+    .header__nav-list {
+      display: none;
+    }
+    .header__content__title{
+      font-size: 30px;
+    }
+    .header__content__subtitle{
+      font-size: 40px;
+    }
+    .header__content__button{
+      width: 120px;
+      font-size: 10px;
+    }
+  }
+
 
   &::before {
     content: '';

@@ -9,6 +9,14 @@
         text-align: justify;
       }
     }
+
+    @media (min-width: $breakpoint-phone-min) and (max-width: $breakpoint-phone-max) {
+      .our-team__description{
+        padding-top: 40px;
+        max-width: 300px;
+        text-align: justify;
+      }
+    }
   
     &__title {
       display: flex;

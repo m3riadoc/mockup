@@ -11,8 +11,8 @@ $color-grey: rgb(229, 229, 229);
 $font-primary: "Montserrat";
 $font-secondary: "Kaushan Script";
 
-
-
+$breakpoint-phone-min: 375px;
+$breakpoint-phone-max: 767px;
 $breakpoint-tablet-min: 768px;
 $breakpoint-tablet-max: 1200px;
 $breakpoint-desktop: 1200px;
