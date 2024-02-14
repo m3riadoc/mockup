@@ -1,12 +1,14 @@
 // Paleta kolorów
-$color-primary: #ff6b6b; 
-$color-secondary: #ffe66d; 
+$color-primary: rgb(243,129,129,0.9);
+$color-secondary: rgb(252,227,138,0.8);
 $color-background: #ffffff;
 $color-text-white: #ffffff;
 $color-text: #333333;
+$color-black: #000000;
 
 
-$font-primary: 'Open Sans', sans-serif;
+$font-primary: "Montserrat";
+$font-secondary: "Kaushan Script";
 
 
 $breakpoint-mobile: 768px;
