@@ -35,17 +35,24 @@ hr {
   padding: 0;
 }
 
-input[type=email],
-button[type=submit] {
+input[type=email] {
   padding: 10px;
-  border: 1px solid rgba(252, 227, 138, 0.8);
+  border: 1px solid rgba(243, 129, 129, 0.9019607843);
   margin-bottom: 15px;
+  font-family: "Montserrat";
+  font-style: italic;
 }
 
 button[type=submit] {
-  background-color: rgba(243, 129, 129, 0.9019607843);
+  height: 38px;
+  background-color: rgb(149, 225, 211);
   color: #ffffff;
+  width: 140px;
   transition: background-color 0.3s ease;
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 12px;
+  border: none;
 }
 button[type=submit]:hover {
   background-color: rgba(252, 227, 138, 0.8);
@@ -236,6 +243,9 @@ button[type=submit]:hover {
 .footer__author {
   color: rgba(243, 129, 129, 0.9019607843);
 }
+.footer__right {
+  display: flex;
+}
 
 .container {
   max-width: 1200px;
@@ -353,7 +363,7 @@ button[type=submit]:hover {
 }
 .team_photos .container .member_photo:hover .hover_overlay {
   opacity: 1;
-  box-shadow: 10px 9px 0px 0px rgb(32, 204, 204);
+  box-shadow: 10px 9px 0px 0px rgb(149, 225, 211);
 }
 .team_photos .container .member_photo .member_photo_left, .team_photos .container .member_photo .member_photo_center, .team_photos .container .member_photo .member_photo_right {
   height: 450px;

@@ -82,7 +82,7 @@
 
           &:hover .hover_overlay {
               opacity: 1;
-              box-shadow: 10px 9px 0px 0px rgba(32,204,204,1); 
+              box-shadow: 10px 9px 0px 0px $color-shadow; 
           }
 
           .member_photo_left, .member_photo_center, .member_photo_right {
