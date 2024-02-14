@@ -2,6 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+      .our-team__description{
+        max-width: 700px;
+        text-align: justify;
+      }
+    }
   
     &__title {
       display: flex;

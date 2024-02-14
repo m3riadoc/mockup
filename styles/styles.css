@@ -93,8 +93,18 @@ button[type=submit]:hover {
   height: 60vh;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  .header__nav {
-    gap: 10px;
+  .header .header__nav-list {
+    gap: 30px;
+  }
+  .header .header__content__title {
+    font-size: 50px;
+  }
+  .header .header__content__subtitle {
+    font-size: 100px;
+  }
+  .header .header__content__button {
+    width: 140px;
+    font-size: 12px;
   }
 }
 .header::before {
@@ -163,6 +173,9 @@ button[type=submit]:hover {
   transition: color 0.3s;
   fill: #ffffff;
 }
+.header__nav-link:hover {
+  fill: rgba(252, 227, 138, 0.8);
+}
 .header__search-icon {
   fill: #333333;
   transition: fill 0.3s;
@@ -208,6 +221,17 @@ button[type=submit]:hover {
 .services {
   background-color: #ffffff;
   padding: 50px 0;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .services .services__grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+  }
 }
 .services__grid {
   margin-top: 30px;
@@ -296,6 +320,12 @@ button[type=submit]:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .our-team .our-team__description {
+    max-width: 700px;
+    text-align: justify;
+  }
 }
 .our-team__title {
   display: flex;
