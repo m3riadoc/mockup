@@ -329,6 +329,12 @@ button[type=submit]:hover {
   align-items: center;
   background-color: rgb(252, 227, 138);
 }
+.team_photos .container .member_photo .hover_overlay .icons .icon:hover {
+  background-color: red;
+}
+.team_photos .container .member_photo .hover_overlay .icons .icon__img:hover {
+  fill: black;
+}
 .team_photos .container .member_photo .hover_overlay .icons img {
   width: 25px;
   height: auto;

@@ -63,6 +63,13 @@
                     justify-content: center;
                     align-items: center;
                     background-color: rgb(252, 227, 138);
+
+                    &:hover{
+                      background-color: red;
+                    }
+                    &__img:hover{
+                      fill: black;
+                    }
                   }
 
                   img{
