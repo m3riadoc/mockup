@@ -277,6 +277,18 @@ button[type=submit]:hover {
   align-items: center;
   text-align: center;
 }
+.team_photos .container .member_photo__title {
+  font-size: 15px;
+  color: #333333;
+  padding-top: 30px;
+}
+.team_photos .container .member_photo__subtitle {
+  font-size: 14px;
+  font-style: italic;
+  color: #333333;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
 .team_photos .container .member_photo img {
   width: 100%;
   -o-object-fit: cover;

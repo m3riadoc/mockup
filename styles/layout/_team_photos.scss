@@ -10,7 +10,19 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        
+        &__title{
+            font-size: 15px;
+            color: $color-text;
+            padding-top: 30px;
+         }
+         &__subtitle{
+            font-size: 14px;
+            font-style: italic;
+            color: $color-text;
+            font-weight: 300;
+            
+            padding-bottom: 40px;
+         }
         
         img {
           width: 100%; 
@@ -34,6 +46,8 @@
             object-position: 50% 10%; 
             object-fit: none;
         }
+
+       
     }
   }
 }
