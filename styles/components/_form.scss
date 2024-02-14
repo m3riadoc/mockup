@@ -1,10 +1,14 @@
 input[type='email']
  {
   padding: 10px;
-  border: 1px solid $color-primary;
+  border: 1px solid $color-grey;
   margin-bottom: 15px;
   font-family: $font-primary;
   font-style: italic;
+  height: 38px;
+  &::placeholder{
+    color: $color-grey;
+  }
   
 }
 

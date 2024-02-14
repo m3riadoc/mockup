@@ -5,11 +5,15 @@
     justify-content:space-between;
     align-items: baseline;
    }
+   &__text{
+    font-family: $font-primary;
+    font-size: 13px;
+    font-weight: 600;
+   }
    &__author{
     color: $color-primary;
    }
    &__right{
     display: flex;
-    
    }
 }

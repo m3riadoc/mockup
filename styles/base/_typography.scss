@@ -27,3 +27,14 @@ hr{
       border-color: rgb(243, 129, 129);
       background-color: rgb(243, 129, 129);
 }
+
+#footer-divider {
+  width: 1200px;
+  text-align: center;
+  display: block;
+  height: 1px;
+  border-style: none;
+  margin: 0 auto; 
+  background-color: $color-grey;
+  margin-bottom: 40px;
+}

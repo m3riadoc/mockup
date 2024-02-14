@@ -27,6 +27,17 @@ hr {
   background-color: rgb(243, 129, 129);
 }
 
+#footer-divider {
+  width: 1200px;
+  text-align: center;
+  display: block;
+  height: 1px;
+  border-style: none;
+  margin: 0 auto;
+  background-color: rgb(229, 229, 229);
+  margin-bottom: 40px;
+}
+
 *,
 *::before,
 *::after {
@@ -37,15 +48,22 @@ hr {
 
 input[type=email] {
   padding: 10px;
-  border: 1px solid rgba(243, 129, 129, 0.9019607843);
+  border: 1px solid rgb(229, 229, 229);
   margin-bottom: 15px;
   font-family: "Montserrat";
   font-style: italic;
+  height: 38px;
+}
+input[type=email]::-moz-placeholder {
+  color: rgb(229, 229, 229);
+}
+input[type=email]::placeholder {
+  color: rgb(229, 229, 229);
 }
 
 button[type=submit] {
   height: 38px;
-  background-color: rgb(149, 225, 211);
+  background-color: #95e1d3;
   color: #ffffff;
   width: 140px;
   transition: background-color 0.3s ease;
@@ -90,7 +108,7 @@ button[type=submit]:hover {
 .header__top {
   display: grid;
   grid-template-columns: 1fr auto;
-  align-items: center;
+  align-items: baseline;
 }
 .header__logo {
   width: 70px;
@@ -133,6 +151,7 @@ button[type=submit]:hover {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
+  fill: #ffffff;
 }
 .header__search-icon {
   fill: #333333;
@@ -239,6 +258,11 @@ button[type=submit]:hover {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+.footer__text {
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: 600;
 }
 .footer__author {
   color: rgba(243, 129, 129, 0.9019607843);
@@ -363,7 +387,7 @@ button[type=submit]:hover {
 }
 .team_photos .container .member_photo:hover .hover_overlay {
   opacity: 1;
-  box-shadow: 10px 9px 0px 0px rgb(149, 225, 211);
+  box-shadow: 10px 9px 0px 0px #95e1d3;
 }
 .team_photos .container .member_photo .member_photo_left, .team_photos .container .member_photo .member_photo_center, .team_photos .container .member_photo .member_photo_right {
   height: 450px;

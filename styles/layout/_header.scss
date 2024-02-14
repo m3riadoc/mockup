@@ -32,7 +32,7 @@
   &__top {
     display: grid;
     grid-template-columns: 1fr auto;
-    align-items: center;
+    align-items: baseline;
   }
 
   &__logo {
@@ -83,6 +83,7 @@
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s;
+      fill: $color-text-white;
     }
   }
 
@@ -98,8 +99,6 @@
     }
   }
 }
-
-
 
 .header__content {
   text-align: center;
