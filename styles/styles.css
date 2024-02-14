@@ -225,6 +225,18 @@ button[type=submit]:hover {
   width: auto;
 }
 
+.footer {
+  color: #000000;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer__author {
+  color: rgba(243, 129, 129, 0.9019607843);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -327,17 +339,17 @@ button[type=submit]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(252, 227, 138);
+  background-color: rgba(252, 227, 138, 0.8);
 }
 .team_photos .container .member_photo .hover_overlay .icons .icon:hover {
-  background-color: rgb(243, 129, 129);
+  background-color: rgba(243, 129, 129, 0.9019607843);
 }
 .team_photos .container .member_photo .hover_overlay .icons .icon:hover svg {
-  fill: white;
+  fill: #ffffff;
 }
 .team_photos .container .member_photo .hover_overlay .icons svg {
   width: 25px;
-  fill: rgb(243, 129, 129);
+  fill: rgba(243, 129, 129, 0.9019607843);
 }
 .team_photos .container .member_photo:hover .hover_overlay {
   opacity: 1;

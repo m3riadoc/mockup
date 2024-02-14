@@ -62,20 +62,20 @@
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  background-color: rgb(252, 227, 138);
+                  background-color: $color-secondary;
               
                   &:hover{
-                    background-color: rgb(243, 129, 129);
+                    background-color: $color-primary;
 
                     svg {
-                      fill: white;
+                      fill: $color-background;
                     }
                   }
                 }
       
                 svg{
                   width: 25px;
-                  fill: rgb(243, 129, 129);
+                  fill: $color-primary;
                 }
               }
           }
