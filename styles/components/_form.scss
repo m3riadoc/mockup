@@ -6,6 +6,7 @@ input[type='email']
   font-family: $font-primary;
   font-style: italic;
   height: 38px;
+  width: 200px;
   &::placeholder{
     color: $color-grey;
   }

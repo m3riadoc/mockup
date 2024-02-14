@@ -53,6 +53,7 @@ input[type=email] {
   font-family: "Montserrat";
   font-style: italic;
   height: 38px;
+  width: 200px;
 }
 input[type=email]::-moz-placeholder {
   color: rgb(229, 229, 229);
@@ -253,6 +254,7 @@ button[type=submit]:hover {
 
 .footer {
   color: #000000;
+  margin-bottom: 60px;
 }
 .footer .container {
   display: flex;
@@ -311,6 +313,9 @@ button[type=submit]:hover {
   width: 1000px;
 }
 
+.team_photos {
+  margin-bottom: 40px;
+}
 .team_photos .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
