@@ -91,6 +91,7 @@ button[type=submit]:hover {
   max-width: 90%;
   width: 100%;
   min-height: 70vh;
+  z-index: 1;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .header .header__nav-list {
@@ -106,8 +107,20 @@ button[type=submit]:hover {
     width: 140px;
     font-size: 12px;
   }
+  .header .header__nav__burger {
+    display: none;
+  }
+  .header .mobile-menu {
+    display: none;
+  }
 }
 @media (min-width: 375px) and (max-width: 767px) {
+  .header .header {
+    min-height: 80vh;
+  }
+  .header .header__logo {
+    font-size: 20px;
+  }
   .header .header__nav-list {
     display: none;
   }
@@ -120,6 +133,64 @@ button[type=submit]:hover {
   .header .header__content__button {
     width: 120px;
     font-size: 10px;
+  }
+  .header .header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .header__nav__burger {
+    display: flex;
+    background-color: transparent;
+    border: none;
+  }
+  .header .mobile-menu {
+    padding-top: 50px;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.171);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 9999;
+  }
+  .header .mobile-menu__nav-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style-type: none;
+    gap: 20px;
+  }
+  .header .mobile-menu__nav-item {
+    margin: 10px 0;
+    text-decoration: none;
+  }
+  .header .mobile-menu__nav-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-family: "Montserrat";
+    font-weight: 500;
+  }
+  .header .mobile-menu__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .header .mobile-menu.active {
+    right: 0;
   }
 }
 .header::before {
@@ -134,7 +205,6 @@ button[type=submit]:hover {
 }
 .header__content, .header__top {
   position: relative;
-  z-index: 1;
   width: 100%;
 }
 .header__top {
@@ -161,6 +231,9 @@ button[type=submit]:hover {
   font-size: 13px;
   gap: 55px;
   color: #ffffff;
+}
+.header__nav__burger {
+  display: none;
 }
 .header__nav-item {
   position: relative;
@@ -231,6 +304,10 @@ button[type=submit]:hover {
 }
 .header__content__button:hover {
   background-color: rgba(243, 129, 129, 0.9019607843);
+}
+
+.mobile-menu {
+  display: none;
 }
 
 .services {

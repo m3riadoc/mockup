@@ -11,8 +11,8 @@
   max-width: 90%;
   width: 100%;
   min-height: 70vh;
-  
-  
+  z-index: 1;
+
   @media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
     .header__nav-list {
       gap: 30px;
@@ -27,24 +27,93 @@
       width: 140px;
       font-size: 12px;
     }
+    .header__nav__burger{
+      display: none;
+    }
+    .mobile-menu {
+      display: none;
+    }
   }
   @media (min-width: $breakpoint-phone-min) and (max-width: $breakpoint-phone-max) {
-    .header{
-      
+    .header {
+      min-height: 80vh;
     }
-
+    .header__logo {
+      font-size: 20px;
+    }
     .header__nav-list {
       display: none;
     }
-    .header__content__title{
+    .header__content__title {
       font-size: 30px;
     }
-    .header__content__subtitle{
+    .header__content__subtitle {
       font-size: 40px;
     }
-    .header__content__button{
+    .header__content__button {
       width: 120px;
       font-size: 10px;
+    }
+    .header__top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header__nav__burger {
+      display: flex;
+      background-color: transparent;
+      border: none;
+    }
+    .mobile-menu {
+      padding-top: 50px;
+      display: block;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 50%;
+      height: 80%;
+      background-color: rgba(255, 255, 255, 0.171);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+      transition: right 0.3s ease;
+      z-index: 9999;
+
+      &__nav-list {
+        display: flex;
+        flex-direction: column; 
+        padding: 0; 
+        list-style-type: none; 
+        gap:20px
+      }
+
+      &__nav-item {
+        margin: 10px 0; 
+        text-decoration: none;
+      }
+
+      &__nav-link {
+        display: block; 
+        text-align: center; 
+        text-decoration: none; 
+        font-size: 16px; 
+         color: black;
+         font-family: $font-primary;
+         font-weight: 500;
+      }
+      &__close-btn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        border: none;
+        background: none;
+        font-size: 24px; 
+        cursor: pointer;
+      }
+    }
+    .mobile-menu.active {
+      right: 0;
     }
   }
 
@@ -62,7 +131,6 @@
 
   &__content, &__top {
     position: relative;
-    z-index: 1;
     width: 100%;
   }
   
@@ -93,6 +161,9 @@
       font-size: 13px;
       gap: 55px;
       color: $color-text-white;
+    }
+    &__burger{
+      display: none;
     }
 
     &-item {
@@ -179,4 +250,8 @@
       background-color: $color-primary;
     }
   }
+}
+
+.mobile-menu {
+  display: none;
 }
