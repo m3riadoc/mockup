@@ -48,36 +48,35 @@
               box-shadow: 10px 9px 0px 0px rgba(32,204,204,0); 
 
               .icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 1px;
+                
+                .icon {
+                  width: 55px;
+                  height: 55px;
+                  padding: 0;
+                  margin: 0;
                   display: flex;
-                  flex-direction: row;
                   justify-content: center;
                   align-items: center;
-                  gap: 1px;
-                  
-                  .icon {
-                    width: 50px;
-                    height: 50px;
-                    padding: 0;
-                    margin: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: rgb(252, 227, 138);
+                  background-color: rgb(252, 227, 138);
+              
+                  &:hover{
+                    background-color: rgb(243, 129, 129);
 
-                    &:hover{
-                      background-color: red;
-                    }
-                    &__img:hover{
-                      fill: black;
+                    svg {
+                      fill: white;
                     }
                   }
-
-                  img{
-                    width: 25px;
-                    height: auto;
-                    object-fit: none;
-                    aspect-ratio: 0;
-                  }
+                }
+      
+                svg{
+                  width: 25px;
+                  fill: rgb(243, 129, 129);
+                }
               }
           }
 
