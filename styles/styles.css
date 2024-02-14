@@ -35,7 +35,7 @@ hr {
   border-style: none;
   margin: 0 auto;
   background-color: rgb(229, 229, 229);
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 *,
@@ -205,6 +205,7 @@ button[type=submit]:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
+  gap: 30px 30px;
 }
 .services__title {
   display: flex;
@@ -242,7 +243,7 @@ button[type=submit]:hover {
 .services .service__text {
   font-family: "Montserrat";
   color: #1a1a1a;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
 }
 .services .service img {

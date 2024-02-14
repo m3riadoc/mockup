@@ -8,6 +8,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr); 
       grid-template-rows: repeat(2, auto); 
+      gap: 30px 30px;
       
     }
 
@@ -52,7 +53,7 @@
       &__text {
         font-family: $font-primary;
         color: darken($color-text, 10%);
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 300;
       }
   
