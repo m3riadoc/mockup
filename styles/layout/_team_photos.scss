@@ -58,14 +58,14 @@
               z-index: 1;
               box-shadow: 10px 9px 0px 0px rgba(32,204,204,0); 
 
-              .icons {
+              &__icons {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 gap: 1px;
                 
-                .icon {
+                &__icon {
                   width: 55px;
                   height: 55px;
                   padding: 0;
@@ -101,15 +101,15 @@
               object-fit: none;
           }
 
-          .member_photo_left {
+          &_left {
               object-position: 20% 40%;
           }
 
-          .member_photo_center {
+          &_center {
               object-position: 55% 90%;
           }
 
-          .member_photo_right {
+          &_right {
               object-position: 50% 10%;
           }
       }
