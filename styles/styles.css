@@ -80,7 +80,7 @@ button[type=submit]:hover {
 
 .header {
   position: relative;
-  background-image: url("/images/Layer 15.png");
+  background-image: url("images/Layer 15.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
