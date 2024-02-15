@@ -124,6 +124,12 @@ button[type=submit]:hover {
   .header .header__nav-list {
     display: none;
   }
+  .header .header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   .header .header__content__title {
     font-size: 30px;
   }
@@ -133,12 +139,6 @@ button[type=submit]:hover {
   .header .header__content__button {
     width: 120px;
     font-size: 10px;
-  }
-  .header .header__top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
   .header .header__nav__burger {
     display: flex;
