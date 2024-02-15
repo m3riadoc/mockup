@@ -151,6 +151,7 @@ button[type=submit]:hover {
     background-color: transparent;
     border: none;
     fill: wheat;
+    cursor: pointer;
   }
   .header .mobile-menu {
     padding-top: 50px;
